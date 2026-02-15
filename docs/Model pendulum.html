@@ -13117,7 +13117,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered" id="cell-id=f8214b79"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Simulating-chaos---Modelling-pendulums-and-chaotic-systems">Simulating chaos - Modelling pendulums and chaotic systems<a class="anchor-link" href="#Simulating-chaos---Modelling-pendulums-and-chaotic-systems">¶</a></h1><h3 id="Steven-Fowler-(see-more-projects-here)">Steven Fowler <a href="https://stevenafowler.github.io/profile/index.html" id="headerlink" target="_blank">(see more projects here)</a><a class="anchor-link" href="#Steven-Fowler-(see-more-projects-here)">¶</a></h3><img alt="No description has been provided for this image" id="headerimage" src="assets/images/pendulum_art_header.jpg"/>
+<h1 id="Modelling-pendulums-and-chaotic-systems">Modelling pendulums and chaotic systems<a class="anchor-link" href="#Modelling-pendulums-and-chaotic-systems">¶</a></h1><h3 id="Steven-Fowler-(see-more-projects-here)">Steven Fowler <a href="https://stevenafowler.github.io/profile/index.html" id="headerlink" target="_blank">(see more projects here)</a><a class="anchor-link" href="#Steven-Fowler-(see-more-projects-here)">¶</a></h3><img alt="No description has been provided for this image" id="headerimage" src="assets/images/pendulum_art_header.jpg"/>
 <p>This simulation focuses of modelling pendulum systems with the future intention of implementing a control feedback system. Consequently, a function was written where time-dependent ODE systems can be solved in a step-wise manner.</p>
 <h2 id="What-I-did">What I did<a class="anchor-link" href="#What-I-did">¶</a></h2><ul>
 <li>Wrote a time-dependent ODE function that can be solved in a step-wise manner.<ul>
@@ -13143,7 +13143,7 @@ div#notebook {
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=c5b46c47">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [121]:</div>
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Imports and generic settings</span>
@@ -13167,7 +13167,7 @@ div#notebook {
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=fc77a78c">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [122]:</div>
+<div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Reference: https://www.kaggle.com/code/zjor86/ode-solver</span>
@@ -13210,7 +13210,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Testing-ODE-solver">Testing ODE solver<a class="anchor-link" href="#Testing-ODE-solver">¶</a></h2><p>A system with a known solution (a function defining a circle) will be used to evaluate the performance of the ODE solver.</p>
-<p>Parametric form of a circle: radius $r$, center $(h, k) &amp; angle $t$</p>
+<p>Parametric form of a circle: radius $r$, center $(h, k)$ &amp; angle $t$</p>
 <p>$$
 P(t) = C + R(t)
 $$</p>
@@ -13240,7 +13240,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=a834d9d4">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [123]:</div>
+<div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Circle test </span>
@@ -13317,7 +13317,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=e2b783b0">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [124]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Setup: Initial state t = 0</span>
@@ -13358,7 +13358,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=07e312cb">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [125]:</div>
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Setup: Initial state t = 0</span>
@@ -13441,7 +13441,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=68a31959">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [126]:</div>
+<div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">derivatives_single_pendulum</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
@@ -13461,7 +13461,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=42b180ce">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [127]:</div>
+<div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Global setting</span>
@@ -13486,7 +13486,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=86de7c15">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [128]:</div>
+<div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Animate pendulums</span>
@@ -13530,6 +13530,16 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <img alt="No description has been provided for this image" src="assets/images/pendulum_single_ani.webp"/>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=2c187eb5"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align: center; font-style: italic; font-size: 14px">
+<b style="color: #d9230f">Figure 4. Single pendulum system.</b><br/>
+    ...
+</p>
 </div>
 </div>
 </div>
@@ -13601,7 +13611,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=b9a93906">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [129]:</div>
+<div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">derivatives_double_pendulum</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
@@ -13636,7 +13646,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=ac4d8d4f">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [130]:</div>
+<div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run double pendulum solution </span>
@@ -13658,7 +13668,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=be9845b9">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [131]:</div>
+<div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Animate pendulums</span>
@@ -13711,6 +13721,16 @@ $$</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=7de575e0"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align: center; font-style: italic; font-size: 14px">
+<b style="color: #d9230f">Figure 5. Double pendulum system.</b><br/>
+    ...
+</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered" id="cell-id=593e7ed9"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13745,7 +13765,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=e679aa6a">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [132]:</div>
+<div class="prompt input_prompt">In [13]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">derivatives_single_trolly</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
@@ -13782,7 +13802,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=a4060715">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [133]:</div>
+<div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run single inverted pendulum on cart</span>
@@ -13803,7 +13823,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=be1d2dda">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [134]:</div>
+<div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Animate pendulums</span>
@@ -13870,6 +13890,16 @@ $$</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=e3b08957"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align: center; font-style: italic; font-size: 14px">
+<b style="color: #d9230f">Figure 6. Inverted pendulum on cart.</b><br/>
+    ...
+</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered" id="cell-id=b3ac8040"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13890,7 +13920,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=7c5e1142">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [135]:</div>
+<div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">derivatives_double_trolly</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
@@ -13936,7 +13966,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=d97ed5e7">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [136]:</div>
+<div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run double inverted pendulum on cart</span>
@@ -13959,7 +13989,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=8aaba16e">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [137]:</div>
+<div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Animate pendulums</span>
@@ -14029,6 +14059,16 @@ $$</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=f8311fa4"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align: center; font-style: italic; font-size: 14px">
+<b style="color: #d9230f">Figure 7. Double inverted pendulum on cart.</b><br/>
+    ...
+</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered" id="cell-id=64113de2"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14036,113 +14076,50 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered" id="cell-id=dc1a973a">
-<details class="input">
-<summary> Show code </summary>
-<div class="prompt input_prompt">In [138]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># # Global setting</span>
-<span class="c1"># dt = 0.001 </span>
-<span class="c1"># t_end = 10</span>
-<span class="c1"># frame_loss = 50</span>
-
-<span class="c1"># # Run single pendulum solution</span>
-<span class="c1"># initial_state_single = [3, 0]   # theta, omega</span>
-<span class="c1"># constants_single = [9.81, 1]    # g, l</span>
-
-<span class="c1"># times, single_solution = ODE_to_solve(initial_state_single, dt, t_end, ODE_method_rk4, </span>
-<span class="c1">#                                       derivatives_single_pendulum, constants_single)</span>
-
-<span class="c1"># x_data_single_solution = constants_single[1]*np.sin(single_solution[:, 0])[::frame_loss]</span>
-<span class="c1"># y_data_single_solution = -constants_single[1]*np.cos(single_solution[:, 0])[::frame_loss]</span>
-
-<span class="c1"># # Run double pendulum solution </span>
-<span class="c1"># initial_state_double = [3, 0, 3, 0]     # theta1, omega1, theta2, omega2</span>
-<span class="c1"># constants_double = [9.81, 2, 1, 1, 1]   # g, l1, l2, m1, m2     </span>
-
-<span class="c1"># times, double_solution = ODE_to_solve(initial_state_double, dt, t_end, ODE_method_rk4, </span>
-<span class="c1">#                                       derivatives_double_pendulum, constants_double)</span>
-
-<span class="c1"># x1_data_double_solution = constants_double[1]*np.sin(double_solution[:, 0])[::frame_loss]</span>
-<span class="c1"># y1_data_double_solution = -constants_double[1]*np.cos(double_solution[:, 0])[::frame_loss]</span>
-<span class="c1"># x2_data_double_solution = x1_data_double_solution + constants_double[2]*np.sin(double_solution[:, 2])[::frame_loss]</span>
-<span class="c1"># y2_data_double_solution = y1_data_double_solution - constants_double[2]*np.cos(double_solution[:, 2])[::frame_loss]</span>
-
-<span class="c1"># # Run single inverted pendulum on cart</span>
-<span class="c1"># initial_state_inverted = [0.5, 0, 0, 0, 0] # theta, omega, x, v, F</span>
-<span class="c1"># constants_inverted = [9.81, 2, 10, 1] # g, l, M, m</span>
-
-<span class="c1"># times, inverted_solution = ODE_to_solve(initial_state_inverted, dt, t_end, ODE_method_rk4, </span>
-<span class="c1">#                                         derivatives_single_trolly, constants_inverted)</span>
-
-<span class="c1"># cart_data_inverted = inverted_solution[:, 3][::frame_loss]</span>
-<span class="c1"># x_data_inverted = constants_inverted[1]*np.sin(inverted_solution[:, 0])[::frame_loss]</span>
-<span class="c1"># y_data_inverted = constants_inverted[1]*np.cos(inverted_solution[:, 0])[::frame_loss]</span>
-
-<span class="c1"># # Run double inverted pendulum on cart</span>
-<span class="c1"># initial_state_double_inverted = [0.5, 0, 0.5, 0, 0, 0, 0] # theta1, omega1, theta2, omega2, x, v, F</span>
-<span class="c1"># constants_double_inverted = [9.81, 2, 1, 10, 1, 1]  # g, l1, l2, M, m1, m2</span>
-
-<span class="c1"># times, double_inverted_solution = ODE_to_solve(initial_state_double_inverted, dt, t_end, ODE_method_rk4, </span>
-<span class="c1">#                                                derivatives_double_trolly, constants_double_inverted)</span>
-
-<span class="c1"># cart_data_dinverted = double_inverted_solution[:, 4][::frame_loss]</span>
-<span class="c1"># x1_data_dinverted = constants_double_inverted[1]*np.sin(double_inverted_solution[:, 0])[::frame_loss]</span>
-<span class="c1"># y1_data_dinverted = constants_double_inverted[1]*np.cos(double_inverted_solution[:, 0])[::frame_loss]</span>
-<span class="c1"># x2_data_dinverted = constants_double_inverted[2]*np.sin(double_inverted_solution[:, 2])[::frame_loss]</span>
-<span class="c1"># y2_data_dinverted = constants_double_inverted[2]*np.cos(double_inverted_solution[:, 2])[::frame_loss]</span>
-</pre></div>
-</div>
-</div>
-</details>
-</div>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=12d5a126">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [139]:</div>
+<div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Animate pendulums</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
-<span class="c1"># ax[0, 0].set_xticks([])</span>
-<span class="c1"># ax[0, 0].set_yticks([])</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
 
-<span class="n">line_single</span><span class="p">,</span>   <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">line_double1</span><span class="p">,</span>  <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">line_double2</span><span class="p">,</span>  <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">line_invert</span><span class="p">,</span>   <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">line_dinvert1</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">line_dinvert2</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">line_single</span><span class="p">,</span>   <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">line_double1</span><span class="p">,</span>  <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">line_double2</span><span class="p">,</span>  <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">line_invert</span><span class="p">,</span>   <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">line_dinvert1</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">line_dinvert2</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="n">cart_width</span> <span class="o">=</span> <span class="mf">1.2</span>
 <span class="n">cart_height</span> <span class="o">=</span> <span class="mf">0.6</span>
@@ -14157,8 +14134,8 @@ $$</p>
 <span class="n">cart_double</span> <span class="o">=</span> <span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span><span class="n">anchor_from_center</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cart_width</span><span class="p">,</span> <span class="n">cart_height</span><span class="p">),</span> 
                                 <span class="n">cart_width</span><span class="p">,</span> <span class="n">cart_height</span><span class="p">,</span> <span class="n">facecolor</span> <span class="o">=</span> <span class="s2">"grey"</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">cart_single</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">cart_double</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">cart_single</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">cart_double</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">init</span><span class="p">():</span>
     <span class="n">line_single</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
@@ -14202,6 +14179,8 @@ $$</p>
 
     <span class="k">return</span> <span class="n">line_single</span><span class="p">,</span> <span class="n">line_double1</span><span class="p">,</span> <span class="n">line_double2</span><span class="p">,</span> <span class="n">line_invert</span><span class="p">,</span> <span class="n">line_dinvert1</span><span class="p">,</span> <span class="n">line_dinvert2</span><span class="p">,</span> <span class="n">cart_single</span><span class="p">,</span> <span class="n">cart_double</span>
 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">pad</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
 <span class="n">ani</span> <span class="o">=</span> <span class="n">animation</span><span class="o">.</span><span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">animate</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">x_data_single_solution</span><span class="p">),</span>
                               <span class="n">interval</span> <span class="o">=</span> <span class="n">frame_loss</span><span class="p">,</span> <span class="n">blit</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">init_func</span><span class="o">=</span><span class="n">init</span><span class="p">)</span>
 
@@ -14224,7 +14203,7 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p style="text-align: center; font-style: italic; font-size: 14px">
-<b style="color: #d9230f">Figure 4. Animation of 4 pendulum systems.</b><br/>
+<b style="color: #d9230f">Figure 8. Animation of 4 pendulum systems.</b><br/>
     ...
 </p>
 </div>
@@ -14240,7 +14219,7 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=8b1fb23c">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [140]:</div>
+<div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run double pendulum solution</span>
@@ -14267,11 +14246,11 @@ $$</p>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=1b45f05c">
 <details class="input">
 <summary> Show code </summary>
-<div class="prompt input_prompt">In [141]:</div>
+<div class="prompt input_prompt">In [21]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Plot chaos</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">autoscale</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
@@ -14306,11 +14285,13 @@ $$</p>
 
     <span class="k">return</span> <span class="n">line_double1</span><span class="p">,</span> <span class="n">line_double2</span><span class="p">,</span> <span class="n">line</span>
 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">pad</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
 <span class="n">ani</span> <span class="o">=</span> <span class="n">animation</span><span class="o">.</span><span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">animate</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">x1_data_chaos_solution</span><span class="p">),</span>
                               <span class="n">interval</span> <span class="o">=</span> <span class="n">frame_loss</span><span class="p">,</span> <span class="n">blit</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">init_func</span><span class="o">=</span><span class="n">init</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
-<span class="n">ani</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'assets/images/chaos_ani.webp'</span><span class="p">,</span> <span class="n">writer</span><span class="o">=</span><span class="s1">'pillow'</span><span class="p">,</span> <span class="n">fps</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">ani</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'assets/images/chaos_ani.webp'</span><span class="p">,</span> <span class="n">writer</span><span class="o">=</span><span class="s1">'pillow'</span><span class="p">,</span> <span class="n">fps</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 <span class="c1"># HTML(ani.to_jshtml())</span>
 </pre></div>
 </div>
@@ -14321,6 +14302,16 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <img alt="No description has been provided for this image" src="assets/images/chaos_ani.webp"/>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=5f62cd97"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align: center; font-style: italic; font-size: 14px">
+<b style="color: #d9230f">Figure 9. Chaotic path of a double pendulum.</b><br/>
+    ...
+</p>
 </div>
 </div>
 </div>
