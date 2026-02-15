@@ -94,6 +94,15 @@
                         <p>Demonstrating access and plotting of the WHO's GHO database</p>
                     </div>
                 </div>
+                <div class="article_item" onclick="open_article('artID_08')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_08.jpg">
+                    </div>
+                    <div class="container_header">
+                        <h2>Simulating Chaos</h2>
+                        <p>Model of a multiple pendulum system</p>
+                    </div>
+                </div>
             </div>
             <!-- Article WIP -->
             <h1>Works in progress</h1>
@@ -134,15 +143,6 @@
                         <p>classification of data</p>
                     </div>
                 </div> -->
-                <div class="article_item" onclick="open_article('artID_08')">
-                    <div class="container_image">
-                        <img src="assets/images/art_itm_08.jpg">
-                    </div>
-                    <div class="container_header">
-                        <h2>Simulating Chaos</h2>
-                        <p>Model of a multiple pendulum system</p>
-                    </div>
-                </div>
                 <div class="article_item" onclick="open_article('artID_09')">
                     <div class="container_image">
                         <img src="assets/images/art_itm_09.png">
@@ -310,7 +310,7 @@
                     <p>For this investigation a thermal model of the egg was created using finite-differences in <mark>python</mark> and <mark>Jupyter</mark>. 
                         The model allowed custom meshes which defined the egg geometry and varying diffusion coefficients and also dynamically changed the boundary conditions based on defined criteria.</p>
                     <p>The results showed an alignment between the generally cooking method and the hardness of the composite egg parts (white and yolk) based on the temperatures reached.</p>
-                    <img src="assets/images/egg_diffusion_02.png">
+                    <img src="assets/images/egg_simulation1.webp">
                     <figcaption>Heat map and cross-section of egg at 63°C inflection point.</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
@@ -551,20 +551,39 @@
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/art_itm_08.jpg">
-                    <p>Simulation of single and double pendulums ensuring the conservation of energy despite the errors inherent with numerical methods.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="Model pendulum.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/pendulum" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
+                    <p>This simulation focuses on modelling pendulum systems with the future intention of implementing a control feedback system. 
+                        Consequently, a function was written where time-dependent ODE systems can be solved in a step-wise manner.</p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>This simulation focuses on modelling pendulums and numerical methods used to be the most accurate and efficient. 
-                        A selected simulation approached will then be used to create a feedback system to control the pendulum.
-                    </p>
-                    <!-- <img src="">
-                    <figcaption>Caption related to image above</figcaption>
+                    <p>I've been fascinated with control systems since seeing an inverted pendulum on a cart during a university open day. 
+                        Although I studied control feedback systems I've never modelled this classic example, so this is the start of my inverted pendulum on a cart simulation.</p>
+                    <p>Modelling pendulum systems stared by writing a time-dependent ODE function in <mark>python</mark> and <mark>Jupyter</mark> that can be solved in a step-wise manner.
+                        This was based on a solution by <a href="https://www.kaggle.com/zjor86" target="_blank" rel="noopener noreferrer">Sergey Royz</a> that was modified for future implementation in control feedback systems.
+                        A 4th order Runge-Kutta methods was demonstrated using an ideal system.</p>
+
+                    <img src="assets/images/chaos_ani.webp">
+                    <figcaption>Simulation of double pendulum showing its chaotic path.</figcaption>
+                    <img src="assets/images/pendulum_ani.webp">
+                    <figcaption>Simulation of 4 pendulum systems.</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
-                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
-                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
-                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
-                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
+                    <p>Read the full <a href="Model pendulum.html" target="_blank" rel="noopener noreferrer">Report</a>. Or review the code in full at <a href="https://github.com/StevenAFowler/pendulum" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="Model pendulum.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/pendulum" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
                 </div>
             </div>
             <!--Article 09 - Controlling chaos-->
