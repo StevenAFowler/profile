@@ -103,6 +103,15 @@
                         <p>Model of a multiple pendulum system</p>
                     </div>
                 </div>
+                <div class="article_item" onclick="open_article('artID_07')">
+                    <div class="container_image">
+                        <img src="assets/images/MNIST_5.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>AI character recognition</h2>
+                        <p>Neural network with numpy only</p>
+                    </div>
+                </div>
             </div>
             <!-- Article WIP -->
             <h1>Works in progress</h1>
@@ -134,15 +143,6 @@
                         <p>Machine learning exploration of the springboks</p>
                     </div>
                 </div>
-                <!-- <div class="article_item" onclick="open_article('artID_07')">
-                    <div class="container_image">
-                        <img src="assets/images/art_itm_07.png">
-                    </div>
-                    <div class="container_header">
-                        <h2>Statistics inference</h2>
-                        <p>classification of data</p>
-                    </div>
-                </div> -->
                 <div class="article_item" onclick="open_article('artID_09')">
                     <div class="container_image">
                         <img src="assets/images/art_itm_09.png">
@@ -520,28 +520,50 @@
             </div>
             <!--Article 07 - NO LONGER IN USE-->
             <div class="popup_container" id="artID_07">
-                <!-- <div class="close_menu">
-                    <h1>Statistical inference</h1>
-                    <button class="close_button" onclick="close_article('artID_07')">Back</button>
+                <div class="close_menu">
+                    <h1>AI character recognition</h1>
+                    <button class="close_button" onclick="close_article('artID_08')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <img class="img_header" src="">
-                    <p>Classification of data - Engineering example?</p>
-
-                    <p>Brief description.</p>
+                    <img class="img_header" src="assets/images/MNIST_example.png">
+                    <p class="p_button">
+                        <a class="a_button" href="numpy_only_ML_on_MNIST.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Machine_learning" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
+                    <p>
+                        An implementation of character recognition based on the MNIST dataset on only using numpy.
+                    </p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>Overview with <mark>marked</mark> items</p>
-                    <p>Another paragraph</p>
-                    <img src="">
-                    <figcaption>Caption related to image above</figcaption>
+                    <p>
+                        The rise of Big Data and statistical learning in the late 2000s laid the foundation of the Deep leaning in 2010s. 
+                        A popular tutorial in deep learning at this time was character recognition, however Tensorflow did not exist and scikit didn't support neural networks (if I remember correctly). 
+                        So, these tutorials were all based in numpy - which I think was a great foundation in learning how ML and NN work.
+                    </p>
+                    <p>
+                        This report uses <mark>numpy</mark> to create and train a neural network to predict characters from the MNIST dataset.
+                        The neural network has a simple structure of 1 hidden layer but results in a test accuracy of > 97%.
+                        There is plenty of room for improvement (i.e. adding more hidden layers, regularization, batch training, convolution) but this simple demonstrator still performs well.
+                    </p>
+
+                    <img src="assets/images/MNIST_results.png">
+                    <figcaption>Accuracy and loss of training and test datasets.</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
-                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
-                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
-                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
-                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
-                </div> -->
+                    <p>Read the full <a href="numpy_only_ML_on_MNIST.html" target="_blank" rel="noopener noreferrer">Report</a>. Or review the code in full at <a href="https://github.com/StevenAFowler/Machine_learning" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="numpy_only_ML_on_MNIST.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Machine_learning" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
+                </div>
             </div>
             <!--Article 08 - Modelling Chaos-->
             <div class="popup_container" id="artID_08">
