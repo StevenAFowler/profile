@@ -97,7 +97,8 @@ let linesCenter = [];
 
 // Inital drawing
 window.addEventListener('resize', debounce(updateSVG, 250));
-window.addEventListener('load', updateSVG(svg)); // Initial update after page has loaded
+// window.addEventListener('load', updateSVG(svg)); // Initial update after page has loaded
+document.addEventListener('DOMContentLoaded', updateSVG(svg));
 // updateSVG(svg);
 
 // Event listener for mouse movement over the SVG
