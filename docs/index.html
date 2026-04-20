@@ -112,6 +112,15 @@
                         <p>Neural network with numpy only</p>
                     </div>
                 </div>
+                <div class="article_item" onclick="open_article('artID_11')">
+                    <div class="container_image">
+                        <img src="assets/images/squareTicTacToe.svg">
+                    </div>
+                    <div class="container_header">
+                        <h2>AI reinforcement learning</h2>
+                        <p>Tic tac toe: Minimax vs neural network </p>
+                    </div>
+                </div>
             </div>
             <!-- Article WIP -->
             <h1>Works in progress</h1>
@@ -518,7 +527,7 @@
                     </p>
                 </div>
             </div>
-            <!--Article 07 - NO LONGER IN USE-->
+            <!--Article 07 - AI character recognition-->
             <div class="popup_container" id="artID_07">
                 <div class="close_menu">
                     <h1>AI character recognition</h1>
@@ -657,6 +666,55 @@
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
                     <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
+                </div>
+            </div>
+            <!--Article 11 - Minimax-->
+            <div class="popup_container" id="artID_11">
+                <div class="close_menu">
+                    <h1>AI reinforecement learning</h1>
+                    <button class="close_button" onclick="close_article('artID_11')">Back</button>
+                </div>
+                <div class="popup_article">
+                    <img class="img_header" src="assets/images/HeaderTicTacToe_ex.svg">
+                    <p class="p_button">
+                        <a class="a_button" href="TicTacToe_game.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Machine_learning" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
+                    <p>
+                        An implementation of reinforcement learning using minimax algorithm which is pitted against a neural network.
+                    </p>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>
+                        Tic tac toe is a classic m,n,k-game that provides a great foundation for AI based models to become players. 
+                        The following shows an implementation of the game with 3 player-models that can compete against each other:
+                        <ul>
+                            <li>A random model that is based all on luck,</li>
+                            <li>A minimax model that I cannot beat,</li>
+                            <li>And a neural network the matches the minimax model in performance.</li>
+                        </ul>    
+                    </p>
+                    <p>
+                       <mark>TensorFlow</mark> was used to create a neural network that was trained against data generated from the minimax algorithm and its performance is equivalent to the minimax model.
+                    </p>
+
+                    <img src="assets/images/ticTacToe_screenshot.png">
+                    <figcaption>Image of results from random-player vs neural network</figcaption>
+                    <h2>Find out more...</h2>
+                    <hr>
+                    <p>Read the full <a href="TicTacToe_game.html" target="_blank" rel="noopener noreferrer">Report</a>. Or review the code in full at <a href="https://github.com/StevenAFowler/Machine_learning" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="TicTacToe_game.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Machine_learning" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
