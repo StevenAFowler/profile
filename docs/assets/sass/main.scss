@@ -241,7 +241,11 @@ button {    // Defines all buttons on website
 
 /* Article selection area */
 #article_space{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // text-align: center;
+    // justify-content: center;
     h1 {
         font-size: 2rem;
     }
@@ -254,7 +258,9 @@ button {    // Defines all buttons on website
         gap: 50px; /* Space between articles */
         padding-top: 5%;
         padding: 5% 5%;
-        background-color: $primary_color_light;
+        // background-color: $primary_color_light;
+        background-color: orange;
+        max-width: 1200px;
 
         @include for-tablet-portrait-up {
             flex-direction: row;
@@ -290,6 +296,7 @@ button {    // Defines all buttons on website
                 max-width: 25%;
             }
             @include for-desktop-up {
+                // max-width: 35%;
                 &:hover {
                     p {
                         display: block;
@@ -300,8 +307,8 @@ button {    // Defines all buttons on website
                     }
                 }
             }
-            @include for-big-desktop-up {
-            }
+            // @include for-big-desktop-up {
+            // }
             .container_image {
                 width: 100%;
                 height: 100%;
