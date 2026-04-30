@@ -259,8 +259,7 @@ button {    // Defines all buttons on website
         gap: 50px; /* Space between articles */
         padding-top: 5%;
         padding: 5% 5%;
-        // background-color: $primary_color_light;
-        background-color: orange;
+        background-color: $primary_color_light;
         max-width: 1200px;
 
         @include for-tablet-portrait-up {
@@ -389,6 +388,7 @@ button {    // Defines all buttons on website
         height: 90%;
         width: 90%;
         min-width: 300px;
+        max-width: 1000px;
         overflow-y: hidden; /* If content overflow -> vertical scrolling */
         scrollbar-width: thin;
         scrollbar-color: $primary_color_light;

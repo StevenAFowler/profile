@@ -212,7 +212,7 @@ button:active {
   gap: 50px; /* Space between articles */
   padding-top: 5%;
   padding: 5% 5%;
-  background-color: orange;
+  background-color: #fffffe;
   max-width: 1200px;
 }
 @media all and (min-width: 600px) {
@@ -307,6 +307,7 @@ button:active {
   height: 90%;
   width: 90%;
   min-width: 300px;
+  max-width: 1000px;
   overflow-y: hidden; /* If content overflow -> vertical scrolling */
   scrollbar-width: thin;
   scrollbar-color: #fffffe;
