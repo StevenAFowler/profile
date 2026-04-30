@@ -115,6 +115,7 @@ html, body {
     #landing_svg {
     width: 100%;
     height: 100%;
+    // height: auto;
     pointer-events: all; 
     opacity: 0.0;
     animation: fade_in 2s ease-in-out 0s forwards;
@@ -578,6 +579,6 @@ button {    // Defines all buttons on website
 #footer {
     background-color: $primary_color_light;
     color: $primary_color_dark;
-    font-size: x-small;
+    font-size: small;
     text-align: center;
 }

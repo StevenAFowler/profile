@@ -1,0 +1,88 @@
+// CSS for javascript animation html page
+@use "main" as main;
+
+/* Default formatting */
+html, body, div, p, ul, li, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: main.$primary_font;
+}
+html, body, div, p, ul, li {
+    line-height: 1.5;
+    color: main.$primary_color_text;
+}
+h1, h2, h3 {
+    line-height: 1.25;
+    color: main.$primary_color_dark;
+}
+
+
+#masterContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: main.$primary_color_light;
+    align-items: center;
+
+    div {
+        width: 80%;
+        min-height: 50px;
+        margin: 10px;
+        background-color: main.$primary_color_light;
+        flex-grow: 1;
+        max-height: 100%;
+        overflow: hidden;
+
+        .lines_01 {
+            stroke: main.$primary_color_light;
+        }
+
+        .lines_02 {
+            stroke: main.$primary_color_light;
+        }
+
+        .lines_03 {
+            stroke: main.$primary_color_light;
+        }
+    }
+}
+
+svg {
+  --path_stroke_size: 0.265; /* .26458437 */
+  --path_stroke: whitesmoke;
+  background-color: main.$primary_color_dark;
+}
+
+.svg_dog {
+    animation: draw_line 2s linear 1s forwards;
+    stroke: whitesmoke;
+}
+.svg_cir {
+    animation: draw_line 2s linear 0s forwards;
+}
+.svg_dow {
+    animation: draw_line 1s linear 0.5s forwards;
+}
+.svg_l11, .svg_l12, .svg_l21, .svg_l22 {
+    animation: draw_line 2s linear 1.5s forwards;
+}
+.svg_txt1, .svg_txt2, .svg_txt3, .svg_txt4 {
+    opacity: 0;
+    animation: fade_txt 1s ease-in-out 0s forwards
+}
+
+@keyframes draw_line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade_txt {
+  100% {
+    opacity: 1;
+  }
+}
+// @keyframes fade_in {
+//   100% {
+//     opacity: 0.4;
+//   }
+// }

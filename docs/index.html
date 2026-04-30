@@ -7,7 +7,7 @@
         <link rel="icon" href="assets/images/gloop_favicon.ico">
         <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 		<script async src="assets/js/main.js"></script>
-        <script async src="assets/js/lineFollow.js"></script>
+        <script async src="assets/js/lineFollow.js" defer></script>
 	</head>
     <body>
         <!-- Loading screen -->
@@ -283,12 +283,23 @@
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/boat_to_vic.jpeg">
-                    <h2>Disclaimers and credit</h2>
-                    <ul>
-                        <li>This website was coded by me (no AI was harmed in the creation of this site)</li>
-                        <li>All images were taken or made by me (or will be when I finish the site)</li>
-                        <li>Design ideas, input and direction from the awesome Ted Low (<a href="https://www.ted8low.com/"target="_blank" rel="noopener noreferrer">Ted's site</a>)</li>
-                    </ul>
+                    <p>
+                        <h2>Disclaimers and credit</h2>
+                        <ul>
+                            <li>This website was coded by me (no AI was harmed in the creation of this site)</li>
+                            <li>All images were taken or made by me (or will be when I finish the site)</li>
+                            <li>Design ideas, input and direction from the awesome Ted Low (<a href="https://www.ted8low.com/"target="_blank" rel="noopener noreferrer">Ted's site</a>)</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h2>Some fun animations</h2>
+                        <p>Follow the link below to see animations that were experimented with when creating the site.</p>
+                        <p class="p_button">
+                            <a class="a_button" href="java_animation.html" target="_blank" rel="noopener noreferrer">
+                                <button>Fun animations</button>
+                            </a>
+                        </p>  
+                    </p>
                     <!-- <hr>
                     <h2>This is Diablo the wonder dog...just in case you were wondering</h2>
                     <img src="assets/images/diablo.jpg"> -->
@@ -720,6 +731,7 @@
         </div>
         <!-- website footer -->
          <div id='footer' onclick="open_article('artID_Website')">
-            Information about this website and licensing.
+            Click here for information about this website and licensing.
          </div>
+         <br>
     </body>
