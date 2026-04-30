@@ -79,13 +79,14 @@ function updateSVG() {
         );
     };
 
+    rotateDeg = angles[Math.floor(Math.random() * angles.length)];
     rotateLines({ x: svg.viewBox.baseVal.width / 2, y: svg.viewBox.baseVal.height / 2});
 }
 
 function rotateLines(position) {
     for (let i = 0; i < lines.length; i++) {
         const theta = getTheta(linesCenter[i], position);
-        lines[i].setAttribute("transform", `rotate(${theta + 45}, ${linesCenter[i].x}, ${linesCenter[i].y})`);
+        lines[i].setAttribute("transform", `rotate(${theta + rotateDeg}, ${linesCenter[i].x}, ${linesCenter[i].y})`);
     };
 }
 
@@ -94,6 +95,8 @@ const activeContainer = document.getElementById('landing_container');
 const svg = document.getElementById('landing_svg');
 let lines = [];
 let linesCenter = [];
+const angles = [0, 45, 90];
+let rotateDeg = 45;
 
 // Inital drawing
 window.addEventListener('resize', debounce(updateSVG, 250));
