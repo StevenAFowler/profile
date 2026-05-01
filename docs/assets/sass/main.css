@@ -83,7 +83,7 @@ html, body {
   height: 100%;
   pointer-events: all;
   opacity: 0;
-  animation: fade_in 2s ease-in-out 0s forwards;
+  animation: fade_in 2s ease-in-out 0.25s forwards;
 }
 #landing_item .background_lines {
   stroke: #fffffe;
@@ -137,6 +137,18 @@ html, body {
 #landing_align #landing_text #landing_svg_text #svg_text_highlight {
   fill: #ffd803;
   stroke: #ffd803;
+}
+@keyframes animated {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation: animated 0.5s forwards 0s ease-in-out;
 }
 
 /* Menu */

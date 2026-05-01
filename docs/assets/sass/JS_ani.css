@@ -197,7 +197,9 @@ button:active {
 
 /* Article selection area */
 #article_space {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #article_space h1 {
   font-size: 2rem;
@@ -211,6 +213,7 @@ button:active {
   padding-top: 5%;
   padding: 5% 5%;
   background-color: #fffffe;
+  max-width: 1200px;
 }
 @media all and (min-width: 600px) {
   #article_space .article_container {
@@ -304,6 +307,7 @@ button:active {
   height: 90%;
   width: 90%;
   min-width: 300px;
+  max-width: 1000px;
   overflow-y: hidden; /* If content overflow -> vertical scrolling */
   scrollbar-width: thin;
   scrollbar-color: #fffffe;
@@ -492,7 +496,7 @@ button:active {
 #footer {
   background-color: #fffffe;
   color: #272343;
-  font-size: x-small;
+  font-size: small;
   text-align: center;
 }
 

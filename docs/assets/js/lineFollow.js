@@ -45,19 +45,23 @@ function updateSVG() {
     // svg.setAttribute('viewBox', `0, 0, 1200, ${1200 * svg.getBoundingClientRect().height / svg.getBoundingClientRect().width}`);
     svg.setAttribute('viewBox', `0, 0, ${1200 * svg.getBoundingClientRect().width / svg.getBoundingClientRect().height}, 1200`);
 
+    // Define line properties
     const lineLength = 50;
     const lineSpacing = 20;
     const lineTotal = lineLength + lineSpacing;
+
+    // Define number of lines
     const nX = Math.floor((svg.viewBox.baseVal.width - lineSpacing) / lineTotal);
     const nY = Math.floor((svg.viewBox.baseVal.height - lineSpacing) / lineTotal);
-    const start = { 
+    const start = {  // start: initial position to create lines (top left)
         x: (svg.viewBox.baseVal.width - nX * lineTotal)/2, 
         y: (svg.viewBox.baseVal.height - nY * lineTotal + lineLength)/2
-    };
+    };  
 
+    // Create the line objects
     for (let i = 0; i < nX; i++){
         for (let j = 0; j < nY; j++){
-            let newLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            let newLine = document.createElementNS(svgNS, 'line');
             newLine.setAttribute('x1', `${start.x + i * lineTotal}`);
             newLine.setAttribute('x2', `${start.x + i * lineTotal + lineLength}`);
             newLine.setAttribute('y1', `${start.y + j * lineTotal}`);
@@ -67,7 +71,7 @@ function updateSVG() {
         }
     }
 
-    // 
+    // Update global references to lines for later updating
     lines = document.getElementsByClassName('background_lines');
     linesCenter = [];
     for (const line of lines) {
@@ -79,7 +83,7 @@ function updateSVG() {
         );
     };
 
-    rotateDeg = angles[Math.floor(Math.random() * angles.length)];
+    rotateDeg = angles[Math.floor(Math.random() * angles.length)];  // Random selection of rotation
     rotateLines({ x: svg.viewBox.baseVal.width / 2, y: svg.viewBox.baseVal.height / 2});
 }
 
@@ -91,14 +95,14 @@ function rotateLines(position) {
 }
 
 // Main <svg> element
-const activeContainer = document.getElementById('landing_container');
-const svg = document.getElementById('landing_svg');
+const activeContainer = document.getElementById('landing_container');  // Container to track mouse movement
+const svg = document.getElementById('landing_svg');  // Global SVG reference
 let lines = [];
 let linesCenter = [];
-const angles = [0, 45, 90];
-let rotateDeg = 45;
+const angles = [0, 45, 90];  // Possible rotation angles that are randomly selected
+let rotateDeg = 45;  // Default rotation value (can be randomly changed later)
 
-// Inital drawing
+// Initial drawing
 window.addEventListener('resize', debounce(updateSVG, 250));
 // window.addEventListener('load', updateSVG(svg)); // Initial update after page has loaded
 document.addEventListener('DOMContentLoaded', updateSVG(svg));
