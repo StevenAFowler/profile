@@ -43,7 +43,8 @@ function close_article(artID)
     overlay.style.display='none';
     document.querySelector('body').style.overflow='auto';
 }
-function close_all_popups(){
+function close_all_popups()
+{
     popups.forEach(popup => {
         popup.style.display='none';
     })
@@ -54,7 +55,7 @@ function stop_propagation(){
     event.stopPropagation();
 }
 // Add listeners
-overlay.addEventListener('click', close_all_popups);
+overlay.addEventListener('click', close_all_popups);  // Add to blur overlay only
 popups.forEach(popup => {
     popup.addEventListener('click', stop_propagation)
 })
