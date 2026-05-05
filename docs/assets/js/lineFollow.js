@@ -36,14 +36,16 @@ function debounce(func, wait) {
 
 // Create SVG
 function updateSVG() {
+    console.log("Updating (re-draw) SVG")
+
     // Namespace
     const svgNS = "http://www.w3.org/2000/svg";
 
     // Clear all elements
     svg.innerHTML = '';
 
-    // svg.setAttribute('viewBox', `0, 0, 1200, ${1200 * svg.getBoundingClientRect().height / svg.getBoundingClientRect().width}`);
     svg.setAttribute('viewBox', `0, 0, ${1200 * svg.getBoundingClientRect().width / svg.getBoundingClientRect().height}, 1200`);
+    // svg.setAttribute('viewBox', `0, 0, ${svg.getBoundingClientRect().width}, ${svg.getBoundingClientRect().height}`);
 
     // Define line properties
     const lineLength = 50;
@@ -101,6 +103,9 @@ let lines = [];
 let linesCenter = [];
 const angles = [0, 45, 90];  // Possible rotation angles that are randomly selected
 let rotateDeg = 45;  // Default rotation value (can be randomly changed later)
+
+// Re-scale viewbox
+svg.setAttribute('viewBox', `0, 0, ${1200 * svg.getBoundingClientRect().width / svg.getBoundingClientRect().height}, 1200`);
 
 // Initial drawing
 window.addEventListener('resize', debounce(updateSVG, 250));
