@@ -44,6 +44,10 @@ h1, h2, h3 {
         .lines_03 {
             stroke: main.$primary_color_light;
         }
+        .node {
+            stroke: main.$primary_color_light;
+            fill: main.$primary_color_light;
+        }
     }
 }
 
