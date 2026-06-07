@@ -21,7 +21,8 @@ function createNode() {
 // Initialize Nodes
 for (let i = 0; i < maxNodes; i++) {
     const node = createNode();
-    node.element.classList.add(nodeClass);
+    // node.element.classList.add(nodeClass);
+    node.element.setAttribute('fill', '#fffffe');
     node.element.setAttribute('r', node.radius);
     svg.appendChild(node.element);
     nodes.push(node);
@@ -67,7 +68,8 @@ function animate() {
                 line.setAttribute('y1', nodes[i].y);
                 line.setAttribute('x2', nodes[j].x);
                 line.setAttribute('y2', nodes[j].y);
-                line.classList.add(nodeClass);
+                // line.classList.add(nodeClass);
+                line.setAttribute('stroke', '#fffffe');
                 line.setAttribute('stroke-width', (1 - distance / maxDistance) * 1.5);
                 line.setAttribute('stroke-opacity', (1 - distance / maxDistance) * 0.6);
                 
